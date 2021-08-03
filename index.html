@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<script src="validation.js"></script>
+	<link rel="stylesheet" href="form.css">
+</head>
+<body>
+					<h1 style="text-align: center;">REVIEW FORM</h1> 
+					<form name="RevForm" action="submit.php" target="_blank" onsubmit="return validation()" method="post"> 
+							<p>Name: <input type="text"size="65" name="Name" /></p> 
+							<br /> 
+							<p>Number: <input type="number"size="65" name="Number" /></p> 
+							<br /> 
+							<p>E-mail Address: <input type="email" pattern=".+@.+com"size="65" name="EMail" /></p> 
+							<br /> 
+							<p>Current ZipCode: <input type="number"size="65" name="Zipcode" /></p> 
+							<br /> 
+							<p>Home Town: <input type="text"size="65" name="Hometown" /></p> 
+							<br />					
+							<p> 
+								Gender: 
+										<select type="text" value="" name="Gender"> 
+										<option>Gender</option>
+										<option>Male</option> 
+										<option>Female</option> 
+										<option>Other</option> 
+										</select> 
+							</p> 
+							<br /> 
+							<br /> 
+							<p>Comments: <textarea cols="55"name="Comment"></textarea></p> 
+							<p> 
+								<input type="submit"value="Submit" name="Submit" /> 
+								<input type="submit"value="Display" name="Display" /> 
+							</p>
+
+					</form> 
+				
+</body> 
